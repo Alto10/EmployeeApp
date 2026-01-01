@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Employee App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>Daftar Karyawan</h1>
+<h2>Tambah Karyawan</h2>
+
+<form id="employeeForm">
+  <input type="text" id="name" placeholder="Nama" required>
+  <input type="text" id="position" placeholder="Posisi" required>
+  <input type="number" id="salary" placeholder="Gaji" required>
+  <button type="submit">Simpan</button>
+</form>
+
+<hr>
+
+  <table border="1" cellpadding="10">
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Nama</th>
+        <th>Posisi</th>
+        <th>Gaji</th>
+        <th>Aksi</th>
+      </tr>
+    </thead>
+
+    <tbody id="employeeTable">
+      <tr>
+        <td colspan="4">Loading...</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
